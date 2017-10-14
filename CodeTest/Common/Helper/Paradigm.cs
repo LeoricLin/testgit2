@@ -19,16 +19,16 @@ using System.Threading.Tasks;
  */
 namespace Common.Helper
 {
+    /// <summary>
+    /// 定义协变的泛型委托，类型参数只用于返回。委托是一种类型，跟类一个级别。是用于定义对方法的引用
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public delegate T GetSome<out T>();
+    public delegate string GetOne<in T>();
     public class Paradigm
     {
-        /// <summary>
-        /// 定义协变的泛型委托，类型参数只用于返回。
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <returns></returns>
-       public  delegate T GetSome<out T>();
-
-        public delegate string GetOne<in T>();
+       
         /// <summary>
         /// 首先这里有一个给整型数组进行冒泡排序的方法，
         /// 那么在后面的发展中，有需要对另一种类型的数组进行冒泡排序，规则跟下面的方法一样。只是数据类型不一致。

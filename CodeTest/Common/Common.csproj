@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\DelegateDemo.cs" />
+    <Compile Include="Helper\LinqHelper.cs" />
     <Compile Include="Helper\Paradigm.cs" />
     <Compile Include="Helper\TaskHelper.cs" />
     <Compile Include="Model\Moive.cs" />
