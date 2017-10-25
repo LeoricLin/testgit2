@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\Collection.cs" />
     <Compile Include="Helper\DelegateDemo.cs" />
     <Compile Include="Helper\LinqHelper.cs" />
     <Compile Include="Helper\Paradigm.cs" />
